@@ -1,0 +1,29 @@
+name: HLSMP-Home
+version: 1.0.0
+main: de.elivb.hlsmpHome.HLSMPHomePlugin
+api-version: "1.21"
+authors: [EliVB]
+description: Hệ thống nhà cho HLSMP Server
+softdepend: [HLSMP-Teams]
+
+commands:
+  sethome:
+    description: Lưu vị trí hiện tại làm nhà.
+    usage: /sethome <tên>
+    permission: hlsmphome.sethome
+  home:
+    description: Mở menu nhà hoặc teleport đến nhà.
+    usage: /home [tên]
+    permission: hlsmphome.home
+  delhome:
+    description: Xóa một nhà đã lưu.
+    usage: /delhome <tên>
+    permission: hlsmphome.delhome
+
+permissions:
+  hlsmphome.sethome:
+    default: true
+  hlsmphome.home:
+    default: true
+  hlsmphome.delhome:
+    default: true
